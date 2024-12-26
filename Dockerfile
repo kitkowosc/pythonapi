@@ -47,5 +47,6 @@ COPY . .
 # Expose the port that the application listens on.
 EXPOSE 5000
 
+ENV FLASK_APP=main.py
 # Run the application.
 CMD ["flask", "run", "--host=0.0.0.0", "--port=5000"]
